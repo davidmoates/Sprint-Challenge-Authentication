@@ -8,7 +8,7 @@ const router = require('express').Router()
 router.post('/register', async (req, res, next) => {
   try {
     const  { username } = req.body
-    const user = await users.findBy({ usersname }).first()
+    const user = await users.findBy({ username }).first()
 
     if(user) {
       return res.status(409).json({

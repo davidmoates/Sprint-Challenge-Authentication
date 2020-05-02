@@ -7,7 +7,7 @@ server.use((err, req, res, next) => {
 	})
 })
 
-const PORT = process.env.PORT || 3300;
+const PORT = process.env.PORT || 4400;
 server.listen(PORT, () => {
   console.log(`\n=== Server listening on port ${PORT} ===\n`);
 });
